@@ -15,21 +15,21 @@
         <h3>Please enter your book info!</h3>
         <label for="name">Name of the book:</label>
         <p></p>
-        <input name="name" type="text"></input>
+        <input name="name" type="text" required></input>
         <p></p>
         <label for="author">Author:</label>
         <p></p>
-        <input name="author" type="text"></input>
+        <input name="author" type="text" required></input>
         <p></p>
         <label for="pages">Number of pages:</label>
         <p></p>
-        <input type="number" min="0" name="pages"></input>
+        <input type="text" inputmode="numeric" pattern="\d*" name="pages" value="0" required></input>
         <p></p>
         <label for="read">Have you read it?</label>
         <input type="checkbox" name="read"></input>
         <p></p>
-        <button formmethod="dialog">Cancel</button>
-        <button id="confirm" value="default">Add Book</button>
+        <button formmethod="dialog" id="cancel" type="button">Cancel</button>
+        <button type="submit">Add Book</button>
         </form>
       </dialog>
       <button type="button">Sign-in</button>

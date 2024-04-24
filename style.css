@@ -1,3 +1,6 @@
+* {
+   font-family: Helvetica, sans-serif;
+   }
 body {
   display: flex;
   flex-direction: column;
@@ -6,6 +9,9 @@ body {
 }
 .modal {
   border-image: linear-gradient(to left,blue, red) 1 / 5px;
+}
+label {
+  font-style: italic;
 }
 .modal button:first-of-type {
   background-color: red;

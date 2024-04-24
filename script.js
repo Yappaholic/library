@@ -1,5 +1,6 @@
 const button = document.querySelector(".book-add")
 const modal = document.querySelector("dialog")
+const cancel = document.querySelector("#cancel")
 button.addEventListener("click", () => {
   modal.showModal()
 });
@@ -13,4 +14,7 @@ modal.addEventListener("click", e => {
   ) {
     modal.close()
   }
+});
+cancel.addEventListener("click", () => {
+  modal.close();
 });
