@@ -88,6 +88,7 @@ function addBookToSite(book) {
   removeButton.addEventListener("click", () => {
     node.remove()
   })
+  removeButton.classList.add("remove")
   node.appendChild(readButton)
   node.appendChild(removeButton)
   shelf.appendChild(node)
